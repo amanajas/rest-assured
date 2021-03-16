@@ -12,16 +12,8 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
-    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
-    implementation 'org.seleniumhq.selenium:selenium-java:3.11.0'
-    // https://mvnrepository.com/artifact/org.testng/testng
-    testCompile group: 'org.testng', name: 'testng', version: '7.4.0'
     // https://mvnrepository.com/artifact/io.rest-assured/rest-assured
     testCompile group: 'io.rest-assured', name: 'rest-assured', version: '4.3.3'
-    // https://mvnrepository.com/artifact/io.rest-assured/json-path
-    implementation group: 'io.rest-assured', name: 'json-path', version: '4.3.3'
-    // https://mvnrepository.com/artifact/io.rest-assured/xml-path
-    implementation group: 'io.rest-assured', name: 'xml-path', version: '4.3.3'
     // https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator
     implementation group: 'io.rest-assured', name: 'json-schema-validator', version: '4.3.3'
     // https://mvnrepository.com/artifact/junit/junit
@@ -30,12 +22,6 @@ dependencies {
     testCompile group: 'org.junit.vintage', name: 'junit-vintage-engine', version: '5.7.1'
     // https://mvnrepository.com/artifact/org.json/json
     implementation group: 'org.json', name: 'json', version: '20210307'
-    // https://mvnrepository.com/artifact/net.lightbody.bmp/browsermob-core
-    compile group: 'net.lightbody.bmp', name: 'browsermob-core', version: '2.1.5'
-    // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl
-    testImplementation group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.14.1'
-    // https://mvnrepository.com/artifact/com.google.guava/guava
-    implementation group: 'com.google.guava', name: 'guava', version: '30.1-jre'
 
 
 

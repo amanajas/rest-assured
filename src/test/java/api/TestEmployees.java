@@ -170,7 +170,7 @@ public class TestEmployees {
                 .post("/delete")
                 .then()
                 .statusCode(200).extract().response();
-        Assertions.assertTrue(response.jsonPath().getString("error").contains("Invalid employee ID"));
+        Assertions.assertTrue(response.jsonPath().getString("error").contains("Employee ID is not a number"));
     }
 
     @Test

@@ -9,9 +9,6 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.lessThan;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
@@ -101,7 +98,6 @@ public class TestEmployees {
     @Test
     public void testDeleteSkippedResponse() {
         // INFO: It suppose to not have an employee with ID -1
-        Map<String, Integer> employee = new HashMap<>();
         Response response = given().baseUri(API_URL).urlEncodingEnabled(true)
                 .queryParam("employee_id", -1)
                 .header("Accept", ContentType.JSON.getAcceptHeader())
@@ -170,7 +166,7 @@ public class TestEmployees {
                 .post("/delete")
                 .then()
                 .statusCode(200).extract().response();
-        Assertions.assertTrue(response.jsonPath().getString("error").contains("Employee ID is not a number"));
+        Assertions.assertTrue(response.jsonPath().getString("error").contains("Invalid employee ID"));
     }
 
     @Test
@@ -185,5 +181,3 @@ public class TestEmployees {
     }
 
 }
-
-

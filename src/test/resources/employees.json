@@ -13,27 +13,6 @@
         },
         {
           "type": "integer"
-        },
-        {
-          "type": "integer"
-        },
-        {
-          "type": "integer"
-        },
-        {
-          "type": "integer"
-        },
-        {
-          "type": "integer"
-        },
-        {
-          "type": "integer"
-        },
-        {
-          "type": "integer"
-        },
-        {
-          "type": "integer"
         }
       ]
     }
